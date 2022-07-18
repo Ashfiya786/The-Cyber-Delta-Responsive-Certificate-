@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <div class="outer-border" id="print-content">
+        <div class="head">
+            <span class="certification">TheCyberDelta</span>
+            <b class="issued">Issued On <?php echo $issue_date; ?>
+            </b>
+        </div>
+        <div class="body-bg">
+            <br><br>
+            <span class="certify">This certifies that</span>
+            <br><br>
+            <span class="name"><b>
+                    <?php echo $intern_name; ?>
+                </b></span><br /><br />
+            <span class="certify">has successfully completed the internship as:</span> <br /><br />
+            <span class="name"><b>
+                    <?php echo $designation; ?>
+                </b></span> <br /><br />
+            <span class="certify2">
+                <?php echo $designation_description; ?>
+            </span> <br /><br />
+            <span class="verify">Verify at: <a class="verify"
+                    href="https://verify.thecyberdelta.com/verifier.php?batchid=<?php echo $batch_id; ?>&tcdid=<?php echo $tcd_id; ?>"><i>https://verify.thecyberdelta.com/verifier.php?batchid=
+                        <?php echo $batch_id; ?>&tcdid=
+                        <?php echo $tcd_id; ?>
+                    </i></a></span>
+        </div>
+        <div>
+            <div class="no-print"><a
+                    href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=Certificate%20Of%20Internship%20As%20<?php echo $designation;?>&organizationId=79503156&issueYear=2022&issueMonth=6&certUrl='https://verify.thecyberdelta.com/verifier.php?batchid=<?php echo $batch_id; ?>&tcdid=<?php echo $tcd_id; ?>'&certId=<?php echo $tcd_id;?>"><button
+                        class="btn" type="button">Print!</button></a></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
